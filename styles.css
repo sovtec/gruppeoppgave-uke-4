@@ -1,0 +1,9 @@
+.app {
+  display: flex;
+  justify-content: center;
+}
+
+.kaninBilde {
+  display: flex;
+  justify-content: center;
+}
