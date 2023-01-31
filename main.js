@@ -33,7 +33,29 @@ Lage en funksjon for gameover, kjører hvis enten clean, play eller feed = 0
 Lage en funskjon for at kjæledyr-verdiene skal gå nedover
 */
 
-function feed() {}
+function feed() {
+  hunger = hunger + 10;
+  if (hunger > 100) {
+    hunger = 100;
+  }
+  updateView();
+}
+
+function clean() {
+  cleanliness = cleanliness + 10;
+  if (cleanliness > 100) {
+    cleanliness = 100;
+  }
+  updateView();
+}
+
+function play() {
+  mood = mood + 10;
+  if (mood > 100) {
+    mood = 100;
+  }
+  updateView();
+}
 
 function subtractOne() {
   cleanliness--;
