@@ -1,12 +1,21 @@
 // Model - dataene våre (let, const)
 
+let hunger = 100;
+let cleanliness = 100;
+let mood = 100;
+
 // View - det vi ser/html
 
 updateView();
 function updateView() {
   let html = /*HTML*/ `
   <div id="bildeKontainer" class="bildeKontainer">
-  <img  id="kaninBilde" class="kaninBilde" src="img/kanin.jpeg" alt="">
+  <img id="kaninBilde" class="kaninBilde" src="img/kanin.jpeg" alt="kaninbilde">
+  </div>
+  <div id="progressBarKontainer" class="progressBarKontainer" >
+  <progress id="feedingBar" class="feedingBar" value='${hunger}' max="100"></progress>
+  <progress id="cleaningBar" class="cleaningBar"value='${cleanliness}' max="100"></progress>
+  <progress id="moodBar" class="moodBar"value='${mood}' max="100"></progress>
   </div>
    
     `;
@@ -20,4 +29,22 @@ function updateView() {
 Lage en funksjon pr. ting man gjør med kjæledyret. f.eks. clean, play, feed.
 
 Lage en funksjon for gameover, kjører hvis enten clean, play eller feed = 0
+
+Lage en funskjon for at kjæledyr-verdiene skal gå nedover
 */
+
+function feed() {}
+
+function subtractOne() {
+  cleanliness--;
+  hunger--;
+  mood--;
+  updateView();
+}
+
+function gameOver() {
+  if (cleanliness < 0 || hunger < 0 || mood < 0) {
+    // game over
+  }
+  updateView();
+}

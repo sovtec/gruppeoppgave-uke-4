@@ -1,9 +1,30 @@
-.app {
+/* #app {
+  display: flex;
+  flex-direction: row;
+} */
+
+.progressBarKontainer {
+  display: flex;
+  justify-content: center;
+  /* display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 30px;
+  left: 20rem; */
+}
+
+.feedingBar .cleaningBar .moodBar {
+  margin: 10px;
+}
+
+.bildeKontainer {
   display: flex;
   justify-content: center;
 }
 
 .kaninBilde {
-  display: flex;
-  justify-content: center;
+  width: 30vh;
+  height: 27vh;
+  margin-top: 100px;
+  border-radius: 45px 10px 45px 10px;
 }
