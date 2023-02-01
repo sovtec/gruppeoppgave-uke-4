@@ -38,3 +38,13 @@
   margin-top: 50px;
   border-radius: 45px 10px 45px 10px;
 }
+
+
+.knapp {
+  margin-left: 30px;
+  height: 40px;
+  width: 50%;
+  background-color: black;
+  color: chocolate;
+  border: solid chocolate;
+}
